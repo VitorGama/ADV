@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+
+  
+
+<div id="animacao"></div>
+
+<div style="text-align:center;">
+
+<img src="" style="text-align: center; display: table; width: 100%; height:100% 100vh; padding: 10px 0;">
+
+<div class="container; text-align: center;">
+<br>
+<br>
+<br>
+ </div>
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    
+
+    <title>ADVENTISTA7°DIA Jorge Teixeira</title>
+
+    
+
+    <style>
+
+
+
+body {
+			margin: auto;
+			padding: auto;
+			background: #000;
+			color: #fff;
+			font-size: 10px;
+			font-family: Arial, sans-serif;}
+		
+		
+		.video-background {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+			z-index: -50;
+		}
+		
+		video {
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			object-fit: cover;
+			transform: translateX(-50%)
+			translateY(-50%);
+			left: 50%;
+			top: 50%;
+			position: absolute;
+}
+	
+     
+      h1 {
+  font-size: 50px;
+}  
+
+h2 {
+  font-size: 100px;
+}  
+
+h3 {
+  font-size: 50px;
+}
+    
+    /* Definindo o tempo da animação e a duração de cada pulo */
+.animacao-letras {
+  animation: pulo 1s ease-in-out 0s infinite;
+}
+
+@keyframes jump {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+@keyframes color-transition {
+        0% {
+          color: red;
+        }
+        50% {
+          color: yellow;
+        }
+        100% {
+          color: blue;
+        }
+      }
+      
+      h1 {
+        animation: jump 1s ease-in-out infinite, color-transition 2s linear infinite;
+      
+  font-size: 2em;
+  font-family: Arial, sans-serif; 
+  width: auto;
+  height: auto;
+ 
+}
+
+h2 {
+        animation: jump 0.5s ease-in-out infinite, color-transition 0.2s linear infinite;
+      
+  font-size: 5em;
+  font-family: Arial, sans-serif; 
+  width: auto;
+  height: auto;
+ 
+}
+
+
+h3 {
+        animation: color-transition 2s linear infinite;
+      
+  font-size: 2em;
+  font-family: Arial, sans-serif; 
+  width: auto;
+  height: auto;
+ 
+}
+
+h4 {
+        animation: color-transition 2s linear infinite;
+      
+  font-size: 8em;
+  font-family: Arial, sans-serif; 
+  width: auto;
+  height: auto;
+ 
+}
+
+
+   </style>
+
+  
+<div class="video-background">
+
+		<video autoplay muted loop>
+			<source src="C:\Users\Dj Chico Granada\Desktop\final\Snapinsta.app_video_122307753_528973572441553_3146188011629006840_n1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+  
+  <h2> JORGE TEIXEIRA</h2>
+
+ 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="texto" class="animacao-letras">
+  
+  <h1> SORTEIO ADVENTISTA ORIGINAL</h1>
+
+</div>
+<label for="maxNumber" style="color:rgb(243, 60, 4);" style="width: auto;">
+
+<div id="texto" >
+<h3>TOTAL PARTICIPANTES</h3>
+</div>
+
+</label>
+    <input type="text" id="maxNumber" style="width: 250px; height: 50px;">
+<br>
+      <button id="sortear" style="width:200px; height: 50px;"></h1>SORTEAR</h1></button>
+
+
+
+  <h3 id="texto"; id="resultado"></h3>
+
+   
+
+<br>
+<br>
+<br>
+
+
+
+   <script> 
+   
+   const button = document.getElementById('generateButton');
+
+   const resultDiv = document.getElementById('result');
+   
+   function generateRandomNumber() {
+     const randomNumber = Math.floor(Math.random() * 100);
+     resultDiv.innerHTML = randomNumber;
+     resultDiv.classList.add('number');
+   }
+   
+   button.addEventListener('click', generateRandomNumber);
+   
+   resultDiv.addEventListener('animationend', () => {
+     resultDiv.classList.remove('number');
+   });
+   
+   </script>
+   
+   
+   <script src="C:\Users\Dj Chico Granada\Desktop\final\cores.js"></script>
+   
+   
+ <script src="content://media/external/downloads/27278"></script>
+ 
+ <script src="content://media/external/downloads/27280"></script>
+  </body>
+
+
+
+  </body>
+
+  </html>
